@@ -1,10 +1,10 @@
 import React from 'react';
-import Camera from './components/Camera';
+import WebcamCapture from './components/WebcamCapture';
 
 function App() {
   return (
     <>
-      <Camera />
+      <WebcamCapture />
     </>
   );
 }
