@@ -1,17 +1,15 @@
 import React from 'react';
+import { ContainerWrapper } from './styles';
+
+import Screen1 from './screen1/index';
+import Screen2 from './screen2';
 
 const Home = () => {
   return (
-    <div>
-      <div>
-        <div>설명</div>
-        <div>
-          <button>시작</button>
-          <button>30 second video</button>
-        </div>
-      </div>
-      <div>렌딩페이지</div>
-    </div>
+    <ContainerWrapper>
+      <Screen1 />
+      <Screen2 />
+    </ContainerWrapper>
   );
 };
 
