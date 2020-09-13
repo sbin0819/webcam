@@ -1,7 +1,8 @@
 import React from 'react';
+import HomeComponent from '../components/Home';
 
 const Main = () => {
-  return <h1>렌딩</h1>;
+  return <HomeComponent />;
 };
 
 export default Main;
