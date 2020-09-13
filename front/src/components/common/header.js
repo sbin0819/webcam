@@ -1,64 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Row, Col, Button } from 'antd';
-import styled from 'styled-components';
 import { MenuOutlined } from '@ant-design/icons';
-
-const HeaderContainer = styled.div`
-  margin: 10px;
-  font-size: 28px;
-  display: flex;
-  align-content: center;
-  .col-1 {
-    width: 30%;
-    span {
-      cursor: pointer;
-    }
-  }
-  .col-2 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 70%;
-    span {
-      margin-right: 25px;
-      cursor: pointer;
-    }
-    @media (max-width: 900px) {
-      span {
-        display: none;
-      }
-    }
-  }
-  .col-3 {
-    display: none;
-    @media (max-width: 900px) {
-      margin-right: 25px;
-      display: block;
-      span {
-        cursor: pointer;
-      }
-    }
-  }
-`;
+import { HeaderContainer } from './styles';
+import Modal from './modal';
 
 const Header = () => {
+  const [visible, setVisible] = useState(false);
   return (
     <>
       <HeaderContainer>
         <div className='col-1'>
-          <span>Studymate</span>
+          <span>
+            <Link to='/'>Studymate</Link>
+          </span>
         </div>
         <div className='col-2'>
-          <span>SIGN UP</span>
-          <span>GUIDELINES</span>
-          <span>FAQ</span>
-          <span>ABOUT</span>
-          <span>LOG IN</span>
+          <span>
+            <Link to='/signup'>SIGN UP</Link>
+          </span>
+          <span>
+            <Link to='/guidelines'>GUIDELINES</Link>
+          </span>
+          <span>
+            <Link to='/faq'>FAQ</Link>
+          </span>
+          <span>
+            <Link to='/about'>ABOUT</Link>
+          </span>
+          <span>
+            <Link to='/login'>LOG IN</Link>
+          </span>
         </div>
         <div className='col-3'>
-          <MenuOutlined />
+          <MenuOutlined onClick={() => setVisible(true)} />
         </div>
       </HeaderContainer>
+      <Modal visible={visible} setVisible={setVisible} />
     </>
   );
 };
