@@ -4,7 +4,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Main from './pages/index';
 import Login from './pages/login';
-import Signup from './pages/signup/index';
+import Signup from './pages/signup';
 import SignupMethod from './pages/signup/method';
 import Guidelines from './pages/guidelines';
 import Faq from './pages/faq';

@@ -1,5 +1,5 @@
 export const markdown = `
-<h1 class='top'>FAQ/h1>
+<h1 class='top'>FAQ</h1>
 <h1>Overview</h1>
 <p>The real magic of Focusmate is our community! Each of us encourages, inspires, and depends on one another to accomplish amazing things.</p>
 
