@@ -6,6 +6,7 @@ import Main from './pages/index';
 import Login from './pages/login';
 import Signup from './pages/signup';
 import SignupMethod from './pages/signup/method';
+import SignupVerify from './pages/signup/verify';
 import Guidelines from './pages/guidelines';
 import Faq from './pages/faq';
 import About from './pages/about';
@@ -17,7 +18,8 @@ function App() {
       <Switch>
         <Route exact path='/' component={Main} />
         <Route exact path='/signup' component={Signup} />
-        <Route exact path='/signup/method' component={SignupMethod} />
+        <Route path='/signup/method' component={SignupMethod} />
+        <Route path='/signup/verify' component={SignupVerify} />
         <Route exact path='/guidelines' component={Guidelines} />
         <Route exact path='/faq' component={Faq} />
         <Route exact path='/about' component={About} />

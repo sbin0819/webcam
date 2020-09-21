@@ -61,7 +61,12 @@ const Signup = ({ match, history }) => {
         className='btn'
         isChecked={isChecked}
         disabled={!isChecked}
-        to={`${match.path}/method`}
+        to={{
+          pathname: `${match.path}/method`,
+          state: {
+            isValid: true,
+          },
+        }}
       >
         Setup my account
       </StyledLink>
