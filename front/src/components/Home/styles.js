@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerWrapper = styled.div`
   .screen-1 {
-    height: calc(100vh - 59.5px);
+    height: calc(100vh);
   }
   .screen-2 {
     height: 100vh;
@@ -11,7 +11,7 @@ export const ContainerWrapper = styled.div`
 `;
 
 export const Scree1Warpper = styled.div`
-  height: calc(100vh - 59.5px);
+  height: calc(100vh);
   text-align: center;
   .content {
     position: relative;

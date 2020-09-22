@@ -36,7 +36,7 @@ const Signup = ({ match, history }) => {
   const [isChecked, setIsChecked] = useState(false);
   return (
     <SinpuWrapper>
-      <h1>Welcome to Focusmate! 😎</h1>
+      <h1>Welcome to Studymate! 😎</h1>
       <h2>Let’s set up your account. It’s 3 steps and</h2>
       <h2>will take around two minutes.</h2>
       <div
