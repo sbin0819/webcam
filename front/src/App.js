@@ -11,6 +11,8 @@ import Guidelines from './pages/guidelines';
 import Faq from './pages/faq';
 import About from './pages/about';
 
+import Web from './components/Camera/WebcamCapture';
+
 function App() {
   return (
     <>
@@ -24,6 +26,7 @@ function App() {
         <Route exact path='/faq' component={Faq} />
         <Route exact path='/about' component={About} />
         <Route exact path='/login' component={Login} />
+        <Route exact path='/camera' component={Web} />
       </Switch>
     </>
   );
