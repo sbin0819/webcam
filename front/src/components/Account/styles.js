@@ -42,4 +42,7 @@ export const SignupWraaper = styled.div`
       cursor: pointer;
     }
   }
+  .social-btn {
+    width: 460px;
+  }
 `;

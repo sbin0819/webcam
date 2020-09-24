@@ -3,7 +3,21 @@ import { Link, withRouter, Redirect } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
 import Tabs from './tabs';
+
+import styled from 'styled-components';
 import { SignupWraaper } from '../styles';
+
+const LoginBtnWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  button {
+    height: 45px;
+    width: 48%;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+  }
+`;
 
 const Method = ({ location }) => {
   const { state } = location;
@@ -39,9 +53,11 @@ const Method = ({ location }) => {
             </form>
           </div>
           <div className='social-btn'>
-            <Link to='verify'>베리파이</Link>
-            <button>페이스북</button>
-            <button>구글</button>
+            {/* <Link to='verify'>베리파이</Link> */}
+            <LoginBtnWrapper>
+              <button>Facebook</button>
+              <button>Google</button>
+            </LoginBtnWrapper>
           </div>
         </SignupWraaper>
       ) : (
