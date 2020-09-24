@@ -44,5 +44,6 @@ export const SignupWraaper = styled.div`
   }
   .social-btn {
     width: 460px;
+    margin: 12px 0 30px 0;
   }
 `;
