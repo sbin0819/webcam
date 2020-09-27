@@ -1,11 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Webcam from 'react-webcam';
+import { CameraWrapper } from './styles';
 
-const videoConstraints = {
-  width: 1280,
-  height: 720,
-  facingMode: 'user',
-};
+import Header from './buttons/topButton';
 
 const WebcamCapture = () => {
   const [deviceId, setDeviceId] = useState({});
@@ -22,17 +19,20 @@ const WebcamCapture = () => {
   }, [handleDevices]);
 
   return (
-    <>
+    <CameraWrapper>
+      <Header />
       {devices.map((device, key) => (
         <div>
           <Webcam
             audio={false}
+            mirrored={true}
+            style={{ width: '80%', height: '60%' }}
             videoConstraints={{ deviceId: device.deviceId }}
           />
-          {device.label || `Device ${key + 1}`}
+          {/* {device.label || `Device ${key + 1}`} */}
         </div>
       ))}
-    </>
+    </CameraWrapper>
   );
 };
 
