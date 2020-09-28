@@ -13,7 +13,7 @@ export const TopButtonWrapper = styled.div`
     justify-content: center;
     cursor: pointer;
     :hover {
-      background: silver;
+      background: crimson;
     }
   }
 `;
