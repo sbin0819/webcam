@@ -11,7 +11,7 @@ export const markdown = `
 <li>What To Do If You Encounter Bad Behavior</li>
 <li>Have questions? Don’t worry! Send us your feedback.</li>
 <br/>
-
+<br/>
 <h1>Community Pledge</h1>
 <p>Creating a safe and supportive Focusmate environment comes down to how each one of us shows up for each other, day to day, moment to moment.</p>
 
